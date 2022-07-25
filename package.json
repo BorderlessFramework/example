@@ -1,0 +1,21 @@
+{
+  "name": "@borderlessjs/example",
+  "version": "0.0.1",
+  "description": "Example application using borderless framework",
+  "main": "index.js",
+  "scripts": {
+    "build": "borderless",
+    "clean": "rm -rf dist inst",
+    "instrument": "borderless instrument",
+    "pack": "borderless pack"
+  },
+  "repository": {
+    "url": "https://github.com/BorderlessFramework/borderless-example",
+    "type": "git"
+  },
+  "author": "Sergey Chernyshev",
+  "license": "ISC",
+  "dependencies": {
+    "@borderlessjs/borderless": "^0.0.2"
+  }
+}
