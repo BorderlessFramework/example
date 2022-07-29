@@ -7,7 +7,8 @@
     "build": "borderless",
     "clean": "rm -rf dist inst",
     "instrument": "borderless instrument",
-    "pack": "borderless pack"
+    "pack": "borderless pack",
+    "version": "borderless version"
   },
   "repository": {
     "url": "https://github.com/BorderlessFramework/borderless-example",
