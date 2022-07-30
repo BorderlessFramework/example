@@ -1,3 +1,4 @@
 inst/
+build/
 dist/
 node_modules/

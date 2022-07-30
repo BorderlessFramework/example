@@ -5,18 +5,18 @@
   "main": "index.js",
   "scripts": {
     "build": "borderless",
-    "clean": "rm -rf dist inst",
-    "instrument": "borderless instrument",
-    "pack": "borderless pack",
-    "version": "borderless version"
+    "clean": "rm -rf inst build dist",
+    "borderless:instrument": "borderless instrument",
+    "borderless:generate": "borderless generate",
+    "borderless:build": "borderless build",
+    "borderless:pack": "borderless pack",
+    "version": "borderless version",
+    "dev:link-local": "npm link @borderlessjs/borderless @borderlessjs/babel-plugin @borderlessjs/env-html @borderlessjs/env-node @borderlessjs/env-main-thread"
   },
   "repository": {
     "url": "https://github.com/BorderlessFramework/borderless-example",
     "type": "git"
   },
   "author": "Sergey Chernyshev",
-  "license": "ISC",
-  "dependencies": {
-    "@borderlessjs/borderless": "^0.0.2"
-  }
+  "license": "ISC"
 }

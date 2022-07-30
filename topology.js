@@ -3,7 +3,7 @@ module.exports = {
     {
       name: "main-site",
       deploy: {
-        type: "node",
+        type: "@borderlessjs/env-node",
         host: "www.mysite.com",
       },
     },
@@ -11,14 +11,14 @@ module.exports = {
   environments: [
     {
       name: "static-html-page",
-      type: "html",
+      type: "@borderlessjs/env-html",
       package: "main-site",
       upstream: "my-app-in-browser",
       path: "pub/",
     },
     {
       name: "my-app-in-browser",
-      type: "main_thread",
+      type: "@borderlessjs/env-main-thread",
       local: ["blah", "glog"],
       upstream: "my-node-backend",
       package: "main-site",
@@ -26,7 +26,7 @@ module.exports = {
     },
     {
       name: "my-node-backend",
-      type: "node",
+      type: "@borderlessjs/env-node",
       input: {
         url: (name) => `/backend/${name}`,
         serialization: "json",
